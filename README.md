@@ -5,7 +5,7 @@ a Mac to how I like it.
 
 To setup run the following command :
 ```
-curl -s https://raw.githubusercontent.com/daemonza/setupmac/master/start.sh | /bin/bash
+curl -s https://raw.githubusercontent.com/xyleth/setupmac/master/start.sh | /bin/bash
 ```
 
 The start.sh script installs `pip` and then `ansible` with pip.
@@ -18,7 +18,7 @@ ansible-playbook -i ./hosts playbook.yml --verbose
 ```
 
 The playbook use homebrew with cask to install most things. You can see a list of
-what get's installed at [here](https://raw.githubusercontent.com/daemonza/setupmac/master/roles/setup/vars/main.yml). If you want to change the list of applications, clone
+what get's installed at [here](https://raw.githubusercontent.com/xyleth/setupmac/master/roles/setup/vars/main.yml). If you want to change the list of applications, clone
 this repository, and edit this file, and run the `start.sh` script.
 
 The applications it cannot install through homebrew get's downloaded to
