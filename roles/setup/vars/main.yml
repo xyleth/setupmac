@@ -19,6 +19,7 @@ cask_applications:
   - iterm2
   - docker
   - steam
+  - balenaetcher
 
 downloads:
    zwift:
