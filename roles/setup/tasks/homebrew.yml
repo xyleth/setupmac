@@ -20,3 +20,7 @@
     tap: "neovim/homebrew-neovim"
     state: present
 
+- name: tpe cask-drivers
+  homebrew_tap:
+    tap: "homebrew/cask-drivers"
+    state: present
