@@ -12,7 +12,8 @@ applications:
   - curl
   - wget
   - zsh
-
+  - zsh-completions
+  
 # homebrew cask applications
 cask_applications:
   - iterm2
@@ -20,8 +21,8 @@ cask_applications:
   - steam
 
 downloads:
-   #zwift:
-   #  name: Zwift
-   #  url: http://cdn.zwift.com/app/ZwiftOSX.dmg
-   #  dest: "{{general.local_home}}/Downloads/ZwiftOSX.dmg"
+   zwift:
+     name: Zwift
+     url: http://cdn.zwift.com/app/ZwiftOSX.dmg
+     dest: "{{general.local_home}}/Downloads/ZwiftOSX.dmg"
 

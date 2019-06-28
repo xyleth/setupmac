@@ -14,7 +14,7 @@ all the heavy lifting of setting your mac.
 
 If you already have ansible installed or prefer running it directly, execure the following :
 ```
-ansible-playbook -i ./hosts playbook.yml --verbose
+ansible-playbook -i ./hosts playbook.yml --verbose -K
 ```
 
 The playbook use homebrew with cask to install most things. You can see a list of
