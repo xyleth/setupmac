@@ -13,6 +13,9 @@ applications:
   - wget
   - zsh
   - zsh-completions
+  - fzf
+  - fd
+  - ripgrep
   
 # homebrew cask applications
 cask_applications:
