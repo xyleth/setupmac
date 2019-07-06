@@ -6,7 +6,7 @@
     repo: https://github.com/xyleth/dotfiles.git
     dest: /Users/benprice/Code/dotfiles
 
-- name: sym linking dot file
+- name: sym linking zshrc dot file
   file:
     src: "{{general.local_home}}/Code/dotfiles/dot.zshrc"
     dest: "{{general.local_home}}/.zshrc"
