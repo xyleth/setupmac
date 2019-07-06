@@ -4,14 +4,10 @@
 - name: setting up my dotfiles
   git:
     repo: https://github.com/xyleth/dotfiles.git
-    dest: /tmp/dotfiles/
+    dest: /Users/benprice/Code/dotfiles
 
-- name: zsh dot file
-  copy:
-    src: /tmp/dotfiles/dot.zshrc 
-    dest: "{{general.local_home}}/.zshrc"
-
-- name: clean up /tmp/dotfiles
+- name: sym linking dot file
   file:
-    path: /tmp/dotfiles
-    state: absent
+    src: "{{general.local_home}}/Code/dotfiles/dot.zshrc"
+    dest: "{{general.local_home}}/.zshrc"
+    state: link

@@ -22,6 +22,11 @@
     path: /etc/shells
     line: /usr/local/bin/zsh
   become: yes
+
+- name: ensure the Code directory exists
+  file:
+    path: "{{general.local_home}}/Code"
+    state: directory
   
 
 
