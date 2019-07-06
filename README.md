@@ -1,10 +1,11 @@
-### Setupmac
+# Setupmac
 
-This is a [Ansible](https://www.ansible.com/) playbook to quickly setup 
+This is a [Ansible](https://www.ansible.com/) playbook to quickly setup
 a Mac to how I like it.
 
 To setup run the following command :
-```
+
+```bash
 curl -s https://raw.githubusercontent.com/xyleth/setupmac/master/start.sh | /bin/bash
 ```
 
@@ -13,7 +14,8 @@ Then git clone this repository and execute the `ansible` playbook which does
 all the heavy lifting of setting your mac.
 
 If you already have ansible installed or prefer running it directly, execure the following :
-```
+
+```bash
 ansible-playbook -i ./hosts playbook.yml --verbose -K
 ```
 
@@ -24,11 +26,10 @@ this repository, and edit this file, and run the `start.sh` script.
 The applications it cannot install through homebrew get's downloaded to
 `$HOME/Downloads`, it's up to you to install them from the Downloads directory.
 
+## Uninstall
 
-#### Uninstall
+If you want to undo all the changes that `setupmac` did, run
 
-If you want to undo all the changes that `setupmac` did, run 
-
-```
+```bash
 start.sh uninstall
 ```
