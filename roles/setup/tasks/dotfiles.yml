@@ -11,3 +11,15 @@
     src: "{{general.local_home}}/Code/dotfiles/dot.zshrc"
     dest: "{{general.local_home}}/.zshrc"
     state: link
+
+- name: sym linking functions dot file
+  file:
+    src: "{{general.local_home}}/Code/dotfiles/dot.functions"
+    dest: "{{general.local_home}}/.functions"
+    state: link
+
+- name: sym linking aliases dot file
+  file:
+    src: "{{general.local_home}}/Code/dotfiles/dot.aliases"
+    dest: "{{general.local_home}}/.aliases"
+    state: link
