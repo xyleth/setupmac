@@ -23,3 +23,9 @@
     src: "{{general.local_home}}/Code/dotfiles/dot.aliases"
     dest: "{{general.local_home}}/.aliases"
     state: link
+
+- name: sym linking nano dot file
+  file:
+    src: "{{general.local_home}}/Code/dotfiles/dot.nanorc"
+    dest: "{{general.local_home}}/.nanorc"
+    state: link

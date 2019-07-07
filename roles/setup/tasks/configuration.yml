@@ -28,6 +28,11 @@
     path: "{{general.local_home}}/Code"
     state: directory
   
+- name: Get nano syntax files
+  git:
+    repo: https://github.com/scopatz/nanorc.git
+    dest: "{{general.local_home}}/.nano"
+    
 
 
 
