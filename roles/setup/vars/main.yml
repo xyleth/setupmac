@@ -25,6 +25,7 @@ cask_applications:
   - steam
   - balenaetcher
   - logitech-options
+  - postman
 
 downloads:
    zwift:
