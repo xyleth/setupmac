@@ -27,6 +27,8 @@ cask_applications:
   - logitech-options
   - postman
   - sublime-text
+  - dash
+  - go2shell
 
 downloads:
    zwift:
