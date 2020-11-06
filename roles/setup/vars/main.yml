@@ -29,6 +29,7 @@ cask_applications:
   - sublime-text
   - dash
   - go2shell
+  - alacritty
 
 downloads:
    zwift:
